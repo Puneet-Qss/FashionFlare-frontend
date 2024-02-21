@@ -1,0 +1,100 @@
+footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 40px 40px;
+  justify-content: space-around;
+  gap: 50px;
+  box-shadow: 22px 2px 22px 2px #eee;
+
+  flex-wrap: wrap;
+}
+
+.logo-section img {
+  height: 120px;
+  width: auto;
+}
+.social-image {
+  height: 34px;
+  width: auto;
+}
+
+.social-icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact h2 {
+  font-weight: bold;
+  color: #fe7a36;
+  line-height: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.social-image {
+  cursor: pointer;
+}
+.social-image:hover {
+  transform: translateY(2px);
+  box-shadow: 5px 5px 5px #eee;
+}
+
+.subscribe input {
+  padding: 14px 8px;
+  max-width: 430px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+}
+
+.email-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.subscribe button {
+  padding: 2px;
+  height: max-content;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding: 14px 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  background-color: #fc6736;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+   .subscribe {
+    width: 100%;
+  }
+}
+
+.subscribe{
+  padding: 0px 126px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 2px;
+}

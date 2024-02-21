@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  &--h1 {
+    font-size: 16px;
+    line-height: 12px;
+    font-weight: 400;
+  }
+  &--h2 {
+    font-size: 12px;
+    line-height: 8px;
+    font-weight: 500;
+  }
+  &--h3 {
+    font-size: 12px;
+    line-height: 6px;
+    font-weight: 600;
+  }
+
+}
