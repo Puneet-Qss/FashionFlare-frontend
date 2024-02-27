@@ -14,10 +14,12 @@ function Search() {
     <div className="input-container">
       <form className="form-container" onSubmit={handleSubmit}>
         <input
+        className="input_field"
           type="text"
           placeholder="Search your product"
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
+          style={{background:"none", color:"white"}}
         />
         <button type="submit" className="searchbutton-group">
           Search

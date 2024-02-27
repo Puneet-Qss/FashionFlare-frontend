@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -22,5 +22,37 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
+  background-color: darkgrey;
+}
+
+/* Home Banner */
+
+.videoSection {
+  height: 490px;
+  position: relative;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.para {
+  font-size: small;
+  font-weight: normal;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }

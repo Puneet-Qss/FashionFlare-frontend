@@ -1,3 +1,8 @@
+/* tailwind Config  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   padding: 0;
