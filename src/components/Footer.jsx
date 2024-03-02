@@ -7,7 +7,7 @@ import whatsapp from "../assets/images/social-icon/whatsapp.png";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className=" w-screen">
       <div className="logo-section">
         <img src={logo} alt="" />
       </div>

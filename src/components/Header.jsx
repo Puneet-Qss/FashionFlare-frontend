@@ -2,20 +2,27 @@ import { useEffect, useState } from "react";
 import { Button, Stack } from "@mui/material";
 import logo from "../assets/images/logo.png";
 import "../assets/styles/header.css";
-import SidebarComponent from "./SidebarComponent";
 import LoginModal from "../components/Users/LoginModal";
 import { toast } from "react-toastify";
 import LoaderComponent from "./Loader/LoaderComponent";
 import axios from "axios";
+import { Link } from "react-router-dom";
+import adminIcon from "../assets/images/admin-icon.png";
+import AdminModal from "./Users/AdminModal";
 
 function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [loader, setLoader] = useState();
+  const [loader, setLoader] = useState(false);
+  const [adminLogin, setAdminLogin] = useState(false);
+
   const openModal = () => {
     setIsModalOpen(true);
   };
 
+  const AdmincloseModal = () => {
+    setAdminLogin(false);
+  };
   const closeModal = () => {
     setIsModalOpen(false);
   };
@@ -51,17 +58,25 @@ function Header() {
   return (
     <>
       {loader && <LoaderComponent />}
-      <header>
+      <header className="">
         <img src={logo} alt="" className="logo" />
         <div className="header-list">
           <ul>
-            <li className="header-list">Home</li>
-            <li className="header-list">About</li>
-            <li className="header-list">Contact</li>
-            <li className="header-list">Services</li>
+            <li className="header-list">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="header-list">
+              <Link to="/about">About</Link>
+            </li>
+            <li className="header-list">
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li className="header-list">
+              <Link to="/services">Services</Link>
+            </li>
           </ul>
         </div>
-        <div className="button-group">
+        <div className="flex  justify-center align-middle gap-5">
           <div className="buttons">
             <Stack spacing={2} direction="row">
               <Button
@@ -76,12 +91,21 @@ function Header() {
               </Button>
             </Stack>
           </div>
-          <SidebarComponent />
+          <div
+            className="flex align-middle justify-center"
+            onClick={() => {
+              setAdminLogin(true);
+            }}
+          >
+            <img src={adminIcon} alt="Admin Icon" className="h-8" />
+          </div>
         </div>
       </header>
       {isModalOpen && (
         <LoginModal onClose={closeModal} setIsLoggedIn={setIsLoggedIn} />
       )}
+
+      {adminLogin && <AdminModal onClose={AdmincloseModal} />}
     </>
   );
 }

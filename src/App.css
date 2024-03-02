@@ -28,8 +28,9 @@
 /* Home Banner */
 
 .videoSection {
-  height: 490px;
+  height: 84vh;
   position: relative;
+  width: 100vw;
 }
 
 .video-background {
@@ -49,7 +50,6 @@
   align-items: center;
   height: 100%;
 }
-
 
 .para {
   font-size: small;

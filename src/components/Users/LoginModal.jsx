@@ -72,11 +72,6 @@ const LoginModal = ({ onClose, setIsLoggedIn }) => {
     }
   };
 
-  // PASSWORD TOGLLE
-  const togglePasswordVisibility = () => {
-    setShowPassword((prevState) => !prevState);
-  };
-
   // SignUp Modal
   const signUpContent = () => {
     return (
