@@ -1,0 +1,51 @@
+.home-container {
+  color: white;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideInFromTop 1s ease-in-out both;
+}
+.subText {
+  text-align: right;
+}
+
+.categories, .categories2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  margin-bottom: 60px;
+}
+
+.shoes-container {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideInFromTop 1s ease-in-out both;
+}
+
+.shoes-container img {
+  width: 550px;
+  height: auto;
+  background-color: transparent;
+  backface-visibility: hidden;
+}
+
+.categories h2 {
+  color: white;
+}
+
+.categories2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  margin-bottom: 60px;
+  flex-direction: row-reverse;
+}
