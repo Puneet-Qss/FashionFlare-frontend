@@ -4,7 +4,7 @@ import shoes from "../../assets/images/shoes.jpg";
 import jeans from "../../assets/images/jeans.jpg";
 function Home() {
   return (
-    <div className="container">
+    <div className="container ">
       <div className="home-container">
         <div className={`banner-content`}>
           <h1>Style in Every Stitch: Your Fashion Destination!"</h1>
@@ -14,7 +14,7 @@ function Home() {
 
       <div className="categories">
         <div className="shoes-container">
-          <img src={shoes} alt="Shoes" />
+          <img src={shoes} alt="Shoes"  className="sub_image"/>
         </div>
         <div className="content">
           <h2 className="heading-h2">Step into Style, Stride with Confidence!</h2>
@@ -28,7 +28,7 @@ function Home() {
       </div>
       <div className="categories2">
         <div className="shoes-container">
-          <img src={jeans} alt="Shoes" />
+          <img src={jeans} alt="Shoes "  className="sub_image"/>
         </div>
         <div className="content">
           <h2 className="heading-h2">Discover Your Perfect Fit</h2>

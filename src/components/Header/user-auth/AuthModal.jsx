@@ -4,16 +4,10 @@ import authImage from "../../../assets/images/auth-image.jpg";
 
 function AuthModal({ isOpen, onClose }) {
   return (
-    <div
-      className={`modal ${isOpen ? "show" : ""}`}
-      tabIndex="-1"
-      role="dialog"
-      style={{ display: isOpen ? "block" : "none" }}
-    >
-      <div className="modal-dialog" role="document">
+    <dialog className={`modal ${isOpen ? "show" : ""}`} open={isOpen}>
+      <div className="modal-dialog">
         <div className="modal-content">
-          <div className="modal-">
-            <h5 className="modal-title">Login/Register</h5>
+          <div className="modal-header">
             <button
               type="button"
               className="btn-close"
@@ -34,7 +28,6 @@ function AuthModal({ isOpen, onClose }) {
                   <div className="form">
                     <input type="text" />
                   </div>
-                  {/* Add more form fields as needed */}
                 </form>
               </div>
             </div>
@@ -50,7 +43,7 @@ function AuthModal({ isOpen, onClose }) {
           </div>
         </div>
       </div>
-    </div>
+    </dialog>
   );
 }
 

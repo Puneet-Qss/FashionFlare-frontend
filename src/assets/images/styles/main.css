@@ -1,5 +1,6 @@
 @import url("./navbar.css");
 @import url("./modal.css");
+@import url("./footer.css");
 
 @keyframes slideInFromTop {
   0% {

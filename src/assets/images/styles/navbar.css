@@ -1,10 +1,14 @@
 .home-container {
+  background-image: url(../navbar-imag.jpg); /* Add your image path here */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Ensures the image covers the entire container */
   color: white;
-  background-color: black;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center; /* Center align the text */
 }
 
 .banner-content {
@@ -16,7 +20,9 @@
   text-align: right;
 }
 
-.categories, .categories2 {
+.categories,
+.categories2 {
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,17 +37,18 @@
 }
 
 .shoes-container img {
-  width: 550px;
-  height: auto;
+  width: 450px;
+  height: 400px;
   background-color: transparent;
   backface-visibility: hidden;
+  border-radius: 100%;
 }
 
 .categories h2 {
   color: white;
 }
 
-.categories2{
+.categories2 {
   display: flex;
   justify-content: center;
   align-items: center;
